@@ -1,0 +1,8 @@
+<h2>Projects list</h2>
+<div *ngIf="projects">
+  <ul>
+    <li *ngFor="let project of projects">
+      <span> name: </span> {{project.name}}
+    </li>
+  </ul>
+</div>

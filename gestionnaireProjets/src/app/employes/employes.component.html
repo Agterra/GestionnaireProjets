@@ -1,0 +1,14 @@
+<h2 class="employe-title">Employees</h2>
+<div *ngIf="employes.length">
+  <ul class="employes">
+    <li *ngFor="let employe of employes"
+        class="employe-card">
+      <a routerLink="/employe/{{employe.id}}">
+        <div class="badge"> <b>ID</b>: {{employe.id}} </div>
+        <div class="badge"> <b>Name:</b> {{employe.firstName}} {{employe.lastName}}</div>
+        <div class="badge"> <b>Post:</b> {{employe.post}}</div>
+        <div class="badge"> <b>Competencies:</b> {{employe.competences}} </div>
+      </a>
+    </li>
+  </ul>
+</div>

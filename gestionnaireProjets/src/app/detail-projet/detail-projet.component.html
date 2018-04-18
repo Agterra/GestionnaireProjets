@@ -1,0 +1,28 @@
+<h1>Project {{project.name}}</h1>
+<div>
+  <div> <b>ID:</b> {{project.id}} </div>
+  <div> <b>Type:</b> {{project.type}}</div>
+</div>
+<!--
+<div>
+  <label>Employe name:
+    <input #employeName/>
+  </label>
+  <button (click)="add(employeName.value.toLowerCase()); employeName.value=''">
+    add
+  </button>
+</div>
+-->
+<div *ngIf="project.employes">
+  <ul>
+    <li *ngFor="let employe of project.employes"
+        class="detail-projet-card">
+      <a routerLink="/employe/{{employe.id}}">
+        <div> <b>Name:</b> {{employe.firstName}} {{employe.lastName | uppercase }}</div>
+        <div> <b>Post:</b> {{employe.post}} </div>
+      </a>
+    </li>
+  </ul>
+</div>
+<button (click)="goBack()"
+        class="backBtn">Back</button>

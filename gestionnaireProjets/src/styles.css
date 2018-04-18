@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia, sans-serif;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.backBtn {
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #000;
+}
+
+.backBtn:hover {
+  color: whitesmoke;
+  background-color: darkgray;
+}

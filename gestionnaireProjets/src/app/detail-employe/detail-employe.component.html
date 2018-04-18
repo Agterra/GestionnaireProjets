@@ -1,0 +1,13 @@
+<h1>Details of {{employe.firstName}} {{employe.lastName | uppercase}} </h1>
+<div>
+  <div><b>ID:</b> {{employe.id}} </div>
+  <div><b>Post:</b> {{employe.post}}</div>
+  <h4>Competencies</h4>
+  <ul>
+    <li *ngFor="let competence of employe.competences">
+      <span>{{competence}}</span>
+    </li>
+  </ul>
+</div>
+<button (click)="goBack()"
+        class="backBtn">Back</button>

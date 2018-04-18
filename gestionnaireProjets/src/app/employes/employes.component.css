@@ -1,0 +1,28 @@
+.employe-card {
+  background-color: #336699;
+  color: whitesmoke;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.employe-card:hover {
+  background-color: lightblue;
+  color: dimgray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.employe-title {
+  text-align: center;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: dimgray;
+}

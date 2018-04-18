@@ -1,0 +1,20 @@
+.detail-projet-card {
+  background-color: #336699;
+  color: whitesmoke;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.detail-projet-card:hover {
+  background-color: lightblue;
+  color: dimgray;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: dimgray;
+}
